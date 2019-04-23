@@ -1,5 +1,4 @@
 .category-list__item {
-  list-style: none;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
@@ -20,4 +19,10 @@
 .category-list__link {
   text-decoration: none;
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .category-list__item {
+    width: 100%;
+  }
 }
