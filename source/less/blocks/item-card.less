@@ -1,3 +1,7 @@
+.item-card {
+  border: 1px solid #ececec;
+}
+
 .item-card__title {
   .catalog-headings();
   margin: 0;
@@ -5,7 +9,6 @@
 
 .item-card__description {
   font-size: 13px;
-  line-height: 30px;
   color: @greyish-brown;
   margin: 0;
 }
@@ -18,6 +21,23 @@
 }
 
 .item-card__wrapper {
-  border: 1px solid #ececec;
   padding: 32px 28px 30px 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .item-card {
+    display: flex;
+    width: 100%;
+  }
+
+  .item-card__buy-section-wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .item-card {
+    flex-direction: column;
+  }
 }

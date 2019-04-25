@@ -21,3 +21,30 @@
 .bestseller__description {
   line-height: 24px;
 }
+
+@media (min-width: @tablet-width) {
+  .bestseller__heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bestseller__container {
+    display: flex;
+  }
+
+  .bestseller__wrapper {
+    width: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .bestseller__heading-wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 170px;
+  }
+
+  .bestseller__container {
+    padding-left: 170px;
+  }
+}
