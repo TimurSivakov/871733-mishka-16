@@ -6,3 +6,25 @@
 .color__item {
   line-height: 18px;
 }
+
+@media (min-width: @tablet-width) {
+  .color__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  .color__item {
+    width: 200px;
+  }
+
+  .color__item:not(:nth-child(2n)) {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .color__list {
+    width: 720px;
+  }
+}

@@ -3,7 +3,7 @@
 }
 
 .page-footer__wrapper {
-  padding: 0 30px;
+  .mobile-container();
 }
 
 .page-footer__social {
@@ -27,5 +27,12 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+    .tablet-container();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    .desktop-container();
   }
 }

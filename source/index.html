@@ -73,13 +73,9 @@
                     <td class="bestseller__value">15 см</td>
                   </tr>
                 </table>
-                <div class="bestseller__price-and-order tablet">
-                  <p class="bestseller__price">Цена: 990&nbsp;руб.</p>
-                  <a class="bestseller__order button" href="#">Заказать</a>
-                </div>
               </div>
               <img class="bestseller__image" src="http://placehold.it/150x100" width="260" height="315" alt="Разноцветные вязаные картинки">
-              <div class="bestseller__price-and-order mobile">
+              <div class="bestseller__price-and-order">
                 <p class="bestseller__price">Цена: 990&nbsp;руб.</p>
                 <a class="bestseller__order button" href="#">Заказать</a>
               </div>
@@ -99,34 +95,54 @@
             <li class="about-us__item">Поставляется в&nbsp;подарочной упаковке</li>
           </ul>
         </section>
-
-        <section class="reviews">
-          <h3 class="reviews__title">Отзывы</h3>
-          <div class="reviews__list">
-            <blockquote class="reviews__item">
-              <p class="reviews__text">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Анастасия Красильникова</cite>
-              <cite class="reviews__author-login">@misssssiskras</cite>
-            </blockquote>
-          </div>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
-          <a class="reviews__write button" href="#">Написать</a>
-        </section>
       </div>
-      <section class="contacts">
-        <div class="contacts__wrapper container">
-          <h3 class="contacts__title">Контакты</h3>
-          <p class="contacts__e-mail">e-mail: info@mimimishkashop.ru</p>
-          <address class="contacts__address">
-            адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-          </address>
+        <section class="reviews">
+          <div class="reviews__container">
+            <div class="">
+              <h3 class="reviews__title">Отзывы</h3>
+              <div class="reviews__list">
+                <blockquote class="reviews__item">
+                  <p class="reviews__text">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
+                  <div class="reviews__author-wrapper">
+                    <cite class="reviews__author-name">Анастасия Красильникова</cite>
+                    <cite class="reviews__author-login">@misssssiskras</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </div>
+            <div class="reviews__order-wrapper">
+              <div class="reviews__buttons">
+                <button class="reviews__button reviews__button--prev" type="button">Предыдущий отзыв<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                  <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+                </svg>
+                </button>
+                <button class="reviews__button reviews__button--next" type="button">Следующий отзыв<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                  <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/></svg>
+                </button>
+              </div>
+              <a class="reviews__write button" href="#">Написать</a>
+              </div>
+            </div>
+        </section>
+        <div class="container">
+          <section class="contacts">
+            <div class="contacts__wrapper">
+              <h3 class="contacts__title">Контакты</h3>
+              <div class="contacts__container">
+                <div class="contacts__e-mail-wrapper">
+                  <p class="contacts__e-mail-title">e-mail:</p>
+                  <p>info@mimimishkashop.ru</p>
+                </div>
+                <address class="contacts__address">
+                  <p class="contacts__address-title">адрес:</p>
+                  <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+                </address>
+              </div>
+              <img class="contacts__map" src="http://placehold.it/150x100" width="322" height="457" alt="Местоположение на карте">
+              <a class="contacts__write-us button" href="#">Напишите нам</a>
+            </div>
+          </section>
         </div>
-        <div class="contacts__map">
-          <img src="http://placehold.it/150x100" width="322" height="457" alt="Местоположение на карте">
-        </div>
-        <a class="contacts__write-us button" href="#">Напишите нам</a>
-      </section>
 
     </main>
 
