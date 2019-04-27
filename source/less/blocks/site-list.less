@@ -14,3 +14,42 @@
   text-decoration: none;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .site-list__item {
+    order: 2;
+  }
+
+  .site-list__item--search {
+    order: 0;
+    margin-left: 50%;
+  }
+
+  .site-list__item--basket {
+    order: 1;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    order: 0;
+  }
+
+  .site-list__item--search {
+    order: 0;
+    margin-left: 240px;
+  }
+
+  .site-list__item--basket {
+    order: 0;
+  }
+}
