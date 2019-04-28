@@ -1,0 +1,26 @@
+.page-header {
+  position: relative;
+  .mobile-container();
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    .tablet-container();
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .desktop-container();
+  }
+
+  .page-header__logo {
+    left: 50%;
+  }
+}

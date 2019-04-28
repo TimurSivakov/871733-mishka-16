@@ -28,8 +28,22 @@
     justify-content: space-between;
   }
 
-  .bestseller__container {
-    display: flex;
+  .bestseller__card {
+    position: relative;
+    padding-right: 50%;
+  }
+
+  .bestseller__image {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    display: block;
+  }
+
+  .bestseller__status {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
   .bestseller__wrapper {
@@ -39,12 +53,15 @@
 
 @media (min-width: @desktop-width) {
   .bestseller__heading-wrapper {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    padding-left: 170px;
+    padding-left: 175px;
+    position: relative;
   }
 
   .bestseller__container {
-    padding-left: 170px;
+    padding-left: 175px;
+  }
+
+  .bestseller__status {
+    left: 0;
   }
 }

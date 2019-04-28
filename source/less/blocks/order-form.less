@@ -5,6 +5,8 @@
 
 .order-form__fieldset {
   border-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .order-form__title {
@@ -16,10 +18,42 @@
 }
 
 .order-form__button {
-  width: 100%;
+  width: 260px;
 }
 
 .order-form__footnote {
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .order-form__fieldset-container {
+    display: flex;
+  }
+
+  .order-form__title {
+    width: 167px;
+  }
+
+  .order-form__footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-form__button {
+    width: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-form {
+    padding-left: 65px;
+  }
+
+  .order-form__footer {
+    padding-left: 167px;
+    width: 700px;
+  }
 }

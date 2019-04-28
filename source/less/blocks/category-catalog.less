@@ -22,6 +22,12 @@
 @media (min-width: @tablet-width) {
   .category-catalog__list {
     display: flex;
-    padding: 0 50px;
+    .tablet-container();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .category-catalog__list {
+    .desktop-container();
   }
 }
