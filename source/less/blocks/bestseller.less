@@ -72,6 +72,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .bestseller {
+    margin-bottom: 55px;
+    padding-bottom: 54px;
+  }
+
   .bestseller__heading-wrapper {
     display: flex;
     justify-content: space-between;
@@ -131,17 +136,22 @@
 }
 
 @media (min-width: @desktop-width) {
+  .bestseller {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 59px;
+  }
+
   .bestseller__heading-wrapper {
     position: relative;
     flex-direction: row-reverse;
-    width: 700px;
+    width: 697px;
     margin-bottom: -117px;
     z-index: 1;
   }
 
   .bestseller__title {
-    font-size: 53px;
-    line-height: 57px;
+    .heading-desktop();
   }
 
   .bestseller__container {
