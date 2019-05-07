@@ -22,17 +22,26 @@
     box-shadow: inset 0 1px 0 0 #ececec;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   .category-catalog__list {
+    position: relative;
     display: flex;
     .tablet-container();
 
-    border-bottom: 24px solid #56c3b2;
-    border-image-source: url("../img/bg-zigzag-fill.svg");
-    border-image-slice: 50;
-    border-image-repeat: round;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
   }
 
   .category-catalog__slogan {
@@ -45,11 +54,17 @@
 
 @media (min-width: @desktop-width) {
   .category-catalog {
-    margin-bottom: 103px;
+    margin-bottom: 113px;
   }
 
   .category-catalog__list {
     .desktop-container();
+
+    &::after {
+      bottom: -3px;
+      left: 5px;
+      background-size: 110%;
+    }
   }
 
   .category-catalog__slogan {
