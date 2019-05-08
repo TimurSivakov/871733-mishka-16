@@ -153,9 +153,9 @@
               <!-- </div> -->
             </div>
         </section>
-        <div class="container">
-          <section class="contacts">
-            <div class="contacts__wrapper">
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <div class="container">
               <h3 class="contacts__title">Контакты</h3>
               <div class="contacts__container">
                 <div class="contacts__e-mail-wrapper">
@@ -164,14 +164,20 @@
                 </div>
                 <address class="contacts__address">
                   <p class="contacts__address-title">адрес:</p>
-                  <p>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
+                  <p class="contacts__address-description">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
                 </address>
               </div>
-              <img class="contacts__map" src="http://placehold.it/150x100" width="322" height="457" alt="Местоположение на карте">
-              <a class="contacts__write-us button" href="#">Напишите нам</a>
             </div>
-          </section>
-        </div>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+              <img class="contacts__map" src="img/map-mobile@1x.jpg" alt="Разноцветные вязаные корзинки">
+            </picture>
+            <!-- <img class="contacts__map" src="http://placehold.it/150x100" width="322" height="457" alt="Местоположение на карте"> -->
+            <a class="contacts__write-us button" href="#">Напишите нам</a>
+          </div>
+        </section>
+
 
     </main>
 
