@@ -1,11 +1,22 @@
 .button {
   display: block;
-  padding: 20px 0;
+  padding: 14px 0;
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   color: @greyish-brown;
   border: 2px solid @greyish-brown;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    background-color: @greyish-brown;
+    color: @white;
+  }
+
+  &:active {
+    color: @white-30;
+  }
 }

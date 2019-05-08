@@ -4,6 +4,29 @@
   color: @black;
   background-color: @gray-light;
   text-align: center;
-  padding: 76px 0 74px;
+  padding: 71px 0 76px;
   margin: 0;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 96px 0 68px;
+    margin-bottom: 61px;
+    border-bottom: 30px solid;
+    border-image-source: url("../img/bg-zigzag-fill.svg");
+    border-image-slice: 50;
+    border-image-repeat: round;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 94px 0 86px;
+    margin-bottom: 116px;
+  }
 }

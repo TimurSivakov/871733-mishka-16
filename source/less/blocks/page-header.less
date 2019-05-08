@@ -1,17 +1,45 @@
 .page-header {
   position: relative;
-  .mobile-container();
+  margin: 0 auto;
+  padding-top: 22px;
+  box-shadow: 0 1px 0 0 @greyish-white,
+    inset 0 1px 0 0 @greyish-white;
+}
+
+.page-header__logo {
+  display: block;
+  text-align: center;
+  padding-bottom: 13px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo-image {
+  width: 86px;
+  height: 35px;
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     .tablet-container();
+    box-shadow: none;
   }
 
   .page-header__logo {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 22px;
+    left: 48px;
+  }
+
+  .page-header__logo-image {
+    width: 113px;
+    height: auto;
   }
 }
 
@@ -21,6 +49,14 @@
   }
 
   .page-header__logo {
+    top: 8px;
     left: 50%;
+
+    transform: translateX(-50%);
+  }
+
+  .page-header__logo-image {
+    width: 149px;
+    height: auto;
   }
 }
