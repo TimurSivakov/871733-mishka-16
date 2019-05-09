@@ -1,22 +1,37 @@
-
 .copyright__link {
-  position: relative;
+  display: flex;
+  width: 185px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
   font-weight: bold;
   font-size: 19px;
   color: @black;
   line-height: 18px;
   text-decoration: none;
-  padding-right: 57px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    width: 27px;
-    height: 34px;
-    background-image: url("../img/htmlacademy.svg");
-    background-repeat: no-repeat;
+  &:hover .copyright__image {
+    fill: #71cdbf;
   }
+
+  &:active .copyright__image {
+    fill: #bde3dd;
+  }
+
+  &:hover .copyright__text {
+    color: @black-hover;
+  }
+
+  &:active .copyright__text {
+    color: @black-active;
+  }
+}
+
+.copyright__text {
+  margin-bottom: 5px;
+}
+
+.copyright__image {
+  margin-right: 2px;
+  fill: @aquamarine-light;
 }
