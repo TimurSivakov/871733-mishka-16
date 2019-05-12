@@ -1,12 +1,34 @@
+.order-form {
+  margin-bottom: 55px;
+}
+
 .order-form__description {
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .order-form__fieldset {
   border-style: none;
   margin: 0;
   padding: 0;
+}
+
+.order-form__fieldset-container {
+  margin-bottom: 20px;
+}
+
+.order-form__fieldset:nth-child(2) .order-form__fieldset-container {
+  margin-bottom: 18px;
+}
+
+.order-form__fieldset:nth-child(n+3) .order-form__fieldset-container {
+  margin-bottom: 32px;
+}
+
+.order-form__fieldset:nth-child(6) .order-form__fieldset-container {
+  margin-bottom: 16px;
 }
 
 .order-form__title {
@@ -17,16 +39,35 @@
   text-transform: uppercase;
 }
 
+.order-form__label {
+  display: inline-block;
+  .label-style();
+  vertical-align: top;
+  margin-left: 62px;
+  margin-bottom: 24px;
+  line-height: 18px;
+}
+
 .order-form__button {
   width: 260px;
+  padding: 14px 0 14px 0;
+  font-size: 17px;
 }
 
 .order-form__footnote {
+  display: block;
+  margin-bottom: 31px;
   font-size: 14px;
   line-height: 16px;
 }
 
 @media (min-width: @tablet-width) {
+  .order-form__fieldset:nth-child(2),
+  .order-form__fieldset:nth-child(4),
+  .order-form__fieldset:nth-child(5) {
+    background-color: @gray-light;
+  }
+
   .order-form__fieldset-container {
     display: flex;
   }

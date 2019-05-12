@@ -1,10 +1,15 @@
+.color {
+  margin-bottom: 36px;
+}
+
 .color__list {
-  .label-style();
+  // .label-style();
   .list-reset();
 }
 
-.color__item {
+.color__item:not(:last-child) {
   line-height: 18px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
