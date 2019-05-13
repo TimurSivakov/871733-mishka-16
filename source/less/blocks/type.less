@@ -59,3 +59,35 @@ input[type="radio"]:checked ~ .type__label::after {
   display: block;
   transform: scale(1);
 }
+
+@media (min-width: @tablet-width) {
+  .type {
+    width: 184px;
+    margin-top: 19px;
+  }
+
+  .type__label {
+    margin-top: 17px;
+    margin-bottom: 41px;
+
+    &::before {
+      top: -16px;
+      left: -80px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &::after {
+      top: 1px;
+      left: -64px;
+      border-width: 10px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .type {
+    width: 164px;
+    margin-right: 28px;
+  }
+}

@@ -75,6 +75,20 @@
 }
 
 @media (min-width: @tablet-width) {
+  .order-form {
+    margin-bottom: 50px;
+  }
+
+  .order-form__description {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 55px;
+  }
+
+  .order-form__fieldset:nth-child(2) {
+    padding-top: 50px;
+  }
+
   .order-form__fieldset:nth-child(2),
   .order-form__fieldset:nth-child(4),
   .order-form__fieldset:nth-child(5) {
@@ -83,10 +97,46 @@
 
   .order-form__fieldset-container {
     display: flex;
+    margin-bottom: 28px;
+  }
+
+  .order-form__fieldset:nth-child(2) .order-form__fieldset-container {
+    margin-bottom: 22px;
+  }
+
+
+  .order-form__fieldset:nth-child(3) .order-form__fieldset-container {
+    padding-top: 30px;
+    margin-bottom: 28px;
+  }
+
+  .order-form__fieldset:nth-child(4) .order-form__fieldset-container {
+    margin-bottom: 0;
+    padding-top: 48px;
+  }
+
+  .order-form__fieldset:nth-child(5) .order-form__fieldset-container {
+    padding-top: 22px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+  }
+
+  .order-form__fieldset:nth-child(6) .order-form__fieldset-container {
+    margin-bottom: 53px;
+    padding-top: 50px;
   }
 
   .order-form__title {
     width: 167px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-form__label {
+    font-size: 19px;
+    line-height: 18px;
   }
 
   .order-form__footer {
@@ -99,15 +149,30 @@
   .order-form__button {
     width: 230px;
   }
+
+  .order-form__footnote {
+    font-size: 17px;
+    line-height: 30px;
+    margin: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .order-form {
-    padding-left: 65px;
+  .order-form__description {
+    width: 700px;
+    padding: 0 50px;
+    margin: 0 auto 55px auto;
+  }
+
+  .order-form__title {
+    text-align: center;
   }
 
   .order-form__footer {
-    padding-left: 167px;
     width: 700px;
+  }
+
+  .order-form__fieldset:nth-child(6) .order-form__fieldset-container {
+    margin-bottom: 48px;
   }
 }

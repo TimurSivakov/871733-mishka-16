@@ -65,11 +65,33 @@ input[type="text"]:focus ~ .form-text__label {
 @media (min-width: @tablet-width) {
   .form-text {
     width: 500px;
+    font-size: 19px;
+  }
+
+  .form-text__input::placeholder {
+    font-size: 19px;
+  }
+
+  .form-text__input {
+    padding-left: 18px;
+  }
+
+  .form-text__label {
+    top: 13px;
+    right: 25px;
+  }
+
+  .form-text__label--mail {
+    right: 21px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-text {
     width: 700px;
+  }
+
+  .form-text__label {
+    right: 8px;
   }
 }

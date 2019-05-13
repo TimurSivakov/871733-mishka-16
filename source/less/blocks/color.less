@@ -68,23 +68,63 @@ input[type="radio"]:focus + label {
 }
 
 @media (min-width: @tablet-width) {
+  .color {
+    margin-top: 17px;
+  }
+
   .color__list {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
+    margin-top: 4px;
   }
 
   .color__item {
     width: 200px;
   }
 
+  .color__item:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
   .color__item:not(:nth-child(2n)) {
-    margin-right: 20px;
+    margin-right: 62px;
+  }
+
+  .color__label {
+    margin-left: 80px;
+
+    &::before {
+      top: -15px;
+      left: -80px;
+      width: 50px;
+      height: 48px;
+    }
+
+    &::after {
+      top: 0;
+      left: -68px;
+      width: 28px;
+      height: 12px;
+      border-width: 3px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .color {
+    margin-right: 8px;
+  }
+
   .color__list {
-    width: 720px;
+    width: 740px;
+  }
+
+  .color__item:not(:nth-child(2n)) {
+    margin-right: 0;
+  }
+
+  .color__item:not(:nth-child(3n)) {
+    margin-right: 63px;
   }
 }
