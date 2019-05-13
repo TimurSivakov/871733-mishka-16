@@ -3,11 +3,11 @@
 }
 
 .catalog__item {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .catalog__item:last-child {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: @tablet-width) {
@@ -20,14 +20,24 @@
   }
 }
 
+@media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
+  .catalog__item:nth-child(2) .item-card__title {
+    margin-bottom: 8px;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .catalog {
-    margin-bottom: 6px;
+    margin-bottom: 56px;
   }
 
   .catalog__list {
     display: flex;
+  }
+
+  .catalog__item,
+  .catalog__item:last-child {
+    margin-bottom: 0;
   }
 
   .catalog__item:not(:last-child) {

@@ -68,12 +68,12 @@
               <legend class="order-form__title type">Тип</legend>
               <div class="type__flex">
                 <p class="type__wrapper form-radio">
-                  <input class="visually-hidden" type="radio" name="type" value="accessories" id="accessories">
-                  <label class="order-form__label" for="accessories">Аксессуар для интерьера</label>
+                  <input class="visually-hidden" type="radio" name="type" value="accessories" id="accessories" checked>
+                  <label class="order-form__label type__label" for="accessories">Аксессуар для интерьера</label>
                 </p>
                 <p class="type__wrapper form-radio">
                   <input class="visually-hidden" type="radio" name="type" value="toy" id="toy">
-                  <label class="order-form__label" for="toy">Детская игрушка</label>
+                  <label class="order-form__label type__label" for="toy">Детская игрушка</label>
                 </p>
               </div>
             </div>
@@ -87,37 +87,37 @@
                 <li class="color__item">
                   <div class="form-checkbox">
                     <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
-                    <label class="order-form__label" for="white">Белый</label>
+                    <label class="order-form__label color__label" for="white">Белый</label>
                   </div>
                 </li>
                 <li class="color__item">
                   <div class="form-checkbox">
                     <input class="visually-hidden" type="checkbox" name="gray" id="gray" checked>
-                    <label class="order-form__label" for="gray">Серый</label>
+                    <label class="order-form__label color__label" for="gray">Серый</label>
                   </div>
                 </li>
                 <li class="color__item">
                   <div class="form-checkbox">
                     <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
-                    <label class="order-form__label" for="tiffany">«Тиффани»</label>
+                    <label class="order-form__label color__label" for="tiffany">«Тиффани»</label>
                   </div>
                 </li>
                 <li class="color__item">
                   <div class="form-checkbox">
                     <input class="visually-hidden" type="checkbox" name="black" id="black">
-                    <label class="order-form__label" for="black">Черный</label>
+                    <label class="order-form__label color__label" for="black">Черный</label>
                   </div>
                 </li>
                 <li class="color__item">
                   <div class="form-checkbox">
                     <input class="visually-hidden" type="checkbox" name="pink" id="pink">
-                    <label class="order-form__label" for="pink">Розовый</label>
+                    <label class="order-form__label color__label" for="pink">Розовый</label>
                   </div>
                 </li>
                 <li class="color__item">
                   <div class="form-checkbox">
                     <input class="visually-hidden" type="checkbox" name="orange" id="orange">
-                    <label class="order-form__label" for="orange">Оранжевый</label>
+                    <label class="order-form__label color__label" for="orange">Оранжевый</label>
                   </div>
                 </li>
               </ul>
@@ -130,11 +130,11 @@
               <div class="full-name__container">
                 <p class="full-name__item form-text">
                   <label for="name">Имя:</label><br>
-                  <input class="form-text__input form-text__input--name" type="text" name="name" value="" id="name" placeholder="Введите ваше имя">
+                  <input class="form-text__input form-text__input--name" type="text" name="name" value="" id="name" placeholder="Введите ваше имя*">
                 </p>
                 <p class="full-name__item form-text">
                   <label for="surname">Фамилия:</label><br>
-                  <input class="form-text__input form-text__input--name" type="text" name="surname" value="" id="surname" placeholder="Укажите фамилию">
+                  <input class="form-text__input form-text__input--name" type="text" name="surname" value="" id="surname" placeholder="Укажите фамилию*">
                 </p>
                 <p class="full-name__item form-text">
                   <label for="second-name">Отчество:</label><br>
@@ -147,8 +147,13 @@
             <div class="order-form__fieldset-container container">
               <legend class="order-form__title phone">Тел</legend>
               <div class="form-text">
-                <label for="phone" class="visually-hidden">Телефон</label>
-                <input class="form-text__input form-text__input--phone" type="text" name="phone" value="" id="phone" placeholder="+7 xxx xxx  xx xx">
+                <input class="form-text__input form-text__input--phone" type="text" name="phone" value="" id="phone" placeholder="+7 xxx xxx  xx xx*">
+                <label for="phone" class="form-text__label">
+                  Телефон
+                  <svg role="img" width="25" height="24">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </label>
               </div>
             </div>
           </fieldset>
@@ -156,8 +161,13 @@
             <div class="order-form__fieldset-container container">
               <legend class="order-form__title e-mail">E-mail</legend>
               <div class="form-text">
-                <label for="e-mail" class="visually-hidden">Email</label>
-                <input class="form-text__input" type="text" name="e-mail" id="e-mail" value="" placeholder="Ваш Email">
+                <input class="form-text__input" type="text" name="e-mail" id="e-mail" value="" placeholder="Ваш Email*">
+                <label for="e-mail" class="form-text__label form-text__label--mail">
+                  Email
+                  <svg role="img" width="32" height="27">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </label>
               </div>
             </div>
           </fieldset>
@@ -166,7 +176,7 @@
               <legend class="order-form__title additional">Доп</legend>
               <div class="form-textarea">
                 <label for="additional" class="visually-hidden">Пожелания к заказу</label>
-                <textarea class="form-textarea__input" name="additional" rows="8" cols="80" id="additional" placeholder="Опишите все ваши пожелания к&nbsp;заказу"></textarea>
+                <textarea class="form-textarea__input" name="additional" rows="7" cols="80" id="additional" placeholder="Опишите все ваши пожелания к&nbsp;заказу"></textarea>
               </div>
             </div>
           </fieldset>

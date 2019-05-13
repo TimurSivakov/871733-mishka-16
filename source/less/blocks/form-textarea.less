@@ -1,18 +1,30 @@
 .form-textarea__input {
   display: block;
-  width: 256px;
+  box-sizing: border-box;
+  width: 260px;
   resize: none;
   border: 2px solid #444444;
-  padding: 0;
-  padding-bottom: 2px;
+  padding: 0 15px;
+  padding-top: 14px;
+  padding-bottom: 5px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 2px solid @aquamarine-input;
+  }
+}
+
+.form-textarea__input:focus-within {
+  // border-bottom: 2px solid black;
 }
 
 .form-textarea__input::placeholder {
   font-size: 17px;
   color: @greyish-brown-30;
   line-height: 18px;
-  padding-top: 14px;
-  padding-left: 15px;
 }
 
 @media (min-width: @tablet-width) {
