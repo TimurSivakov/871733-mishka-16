@@ -4,20 +4,51 @@
 
 .item-card__image {
   width: 260px;
-  height: auto;
+  height: 194px;
+}
+
+.item-card__link-image {
+  opacity: 0.2;
+
+  &:hover {
+    fill: @seafoam-blue;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.item-card__link {
+  text-decoration: none;
+}
+
+.item-card__name {
+  min-height: 59px;
+  border-bottom: 1px solid @gray-light;
+  padding-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .item-card__title {
   .catalog-headings();
   margin: 0;
   margin-bottom: 5px;
+
+  &:hover {
+    color: @black-hover;
+  }
+
+  &:active {
+    color: @black-active;
+  }
 }
 
 .item-card__description {
   font-size: 13px;
   color: @greyish-brown;
   margin: 0;
-  margin-bottom: 19px;
 }
 
 .item-card__price {
@@ -29,20 +60,28 @@
 }
 
 .item-card__wrapper {
-  padding: 18px 28px 24px 27px;
+  padding: 18px 28px 27px 27px;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .item-card__buy-section-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 18px;
-  border-top: 1px solid @gray-light;
 }
 
-.item-card__add-to-cart img {
-  width: 20px;
-  height: auto;
+.item-card__add-to-cart {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
@@ -64,11 +103,10 @@
   .item-card__description {
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 175px;
   }
 
-  .catalog__item:nth-child(3) .item-card__description {
-    margin-bottom: 152px;
+  .item-card__name {
+    min-height: 216px;
   }
 
   .item-card__picture {
@@ -101,17 +139,14 @@
     height: auto;
   }
 
-  .item-card__description {
-    margin-bottom: 38px;
-  }
-
-  .catalog__item:nth-child(3) .item-card__description {
-    margin-bottom: 15px;
+  .item-card__name {
+    min-height: 97px;
+    padding-bottom: 0;
   }
 
   .item-card__wrapper {
     width: auto;
-    padding: 25px 36px 24px 26px;
+    padding: 25px 36px 27px 26px;
   }
 
   .item-card__price {
