@@ -1,0 +1,124 @@
+.modal-cart {
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: solid 1px #c6c6c6;
+  background-color: @white;
+}
+
+.modal-cart__container {
+  padding: 0 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.modal-cart__fieldset {
+  border: none;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.modal-cart__title {
+  width: 149px;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal-cart__choose-size {
+  margin-bottom: 20px;
+}
+
+.modal-cart__sizes {
+  display: flex;
+  margin: 0 auto;
+  width: 260px;
+}
+
+.modal-cart__label {
+  width: 80px;
+  margin: 0;
+  padding: 15px 0;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: 1px solid @greyish-brown-10;
+
+  &:hover {
+    border: 1px solid @greyish-brown-30;
+  }
+
+  &:active {
+    border: 1px solid @aquamarine-input;
+  }
+}
+
+input[type="radio"]:focus + .modal-cart__label {
+  outline: 1px solid @aquamarine-input;
+  outline-offset: -1px;
+}
+
+.modal-cart__label:not(:last-child) {
+  margin-right: 7px;
+}
+
+.modal-cart__button {
+  padding: 20px 82px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @white;
+  background-color: @aquamarine-light;
+  border: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .modal-cart {
+    width: 566px;
+  }
+
+  .modal-cart__container {
+    padding: 0 105px;
+  }
+
+  .modal-cart__title {
+    width: 354px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal-cart__choose-size {
+    font-size: 17px;
+  }
+
+  .modal-cart__sizes {
+    width: 356px;
+  }
+
+  .modal-cart__label {
+    width: 110px;
+    border-width: 2px;
+
+    &:hover,
+    &:active {
+      border-width: 2px;
+    }
+  }
+
+  input[type="radio"]:focus + .modal-cart__label {
+    outline: 2px solid @aquamarine-input;
+    outline-offset: -2px;
+  }
+
+  .modal-cart__button {
+    padding: 20px 130px;
+  }
+}
