@@ -62,7 +62,7 @@ gulp.task("images", function() {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img"));
+    // .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("webp", function () {
@@ -89,5 +89,5 @@ gulp.task("refresh", function (done){
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite"));
+gulp.task("build", gulp.series("clean", "copy", "css", "images", "webp", "sprite"));
 gulp.task("start", gulp.series("build", "server"));
