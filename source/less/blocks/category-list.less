@@ -1,15 +1,29 @@
 
 .category-list__item {
+  position: relative;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    transform: scaleY(1);
+  }
+
+  &:hover::before {
+    transform: scaleY(1.1);
+  }
 }
 
-.category-list__item--top {
+.category-list__item--top::before {
   background-color: @aquamarine-light;
 }
 
-.category-list__item--bottom {
+.category-list__item--bottom::before {
   background-color: @aquamarine;
 }
 
