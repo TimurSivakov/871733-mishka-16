@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.min.css" type="text/css">
     <script>
@@ -153,11 +157,11 @@
             </div>
             <div class="reviews__buttons">
               <button class="reviews__button reviews__button--prev" type="button">
-                <img src="img/icon-left-arrow.svg" alt="Предыдущий отзыв">
+                <img src="img/icon-left-arrow.svg" alt="Предыдущий отзыв" width="50" height="26">
                 Предыдущий отзыв
               </button>
               <button class="reviews__button reviews__button--next" type="button">
-                <img src="img/icon-right-arrow.svg" alt="Следующий отзыв">
+                <img src="img/icon-right-arrow.svg" alt="Следующий отзыв" width="50" height="26">
                 Следующий отзыв
               </button>
             </div>
@@ -202,7 +206,7 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" aria-label="Магазин вязаных штучек «Мишка»">
           <svg role="img" class="page-footer__logo-image" width="102" height="34">
-            <use xlink:href="img/sprite.svg#icon-footer"></use>
+            <use xlink:href="#icon-footer"></use>
           </svg>
         </a>
         <div class="page-footer__social social">
@@ -234,13 +238,33 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу интенсива">
             <b class="copyright__text">Разработано</b>
             <svg role="img" class="copyright__image" width="27" height="34">
-              <use xlink:href="#icon-htmlacademy"></use>
+              <use xlink:href="icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
 
     </footer>
+
+    <section class="modal modal-cart">
+      <div class="modal-cart__container">
+        <h2 class="modal-cart__title">Добавить в корзину</h2>
+        <form class="modal-cart__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="modal-cart__fieldset">
+            <legend class="modal-cart__choose-size">Выберите размер:</legend>
+            <div class="modal-cart__sizes">
+              <input class="visually-hidden" type="radio" name="size" value="small" id="small" checked>
+              <label class="modal-cart__label" for="small">s</label>
+              <input class="visually-hidden" type="radio" name="size" value="medium" id="medium">
+              <label class="modal-cart__label" for="medium">m</label>
+              <input class="visually-hidden" type="radio" name="size" value="large" id="large">
+              <label class="modal-cart__label" for="large">l</label>
+            </div>
+          </fieldset>
+          <button class="modal-cart__button" type="submit">Добавить</button>
+        </form>
+      </div>
+    </section>
 
     <script src="js/script.js"></script>
   </body>
